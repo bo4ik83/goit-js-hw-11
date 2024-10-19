@@ -1,0 +1,81 @@
+button {
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 91px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+button:active {
+  background-color: #4e75ff;
+}
+
+button:disabled {
+  width: 432px;
+  height: 88px;
+  top: 412px;
+  left: 28px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #ef4040;
+  cursor: not-allowed;
+}
+
+#search-query {
+  padding: 8px;
+  font-size: 16px;
+  width: 138px;
+  margin-right: 16px;
+}
+
+#search-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 272px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.gallery-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.info p {
+  margin: 0;
+}
